@@ -10,13 +10,7 @@ import Foundation
 import Alamofire
 
 public class APIManager {
-
-  public class var sharedInstance: APIManager {
-    struct Singleton {
-      static let instance : APIManager = APIManager()
-    }
-    return Singleton.instance
-  }
+  public static let sharedInstance: APIManager = APIManager()
 
   let manager = Manager()
 
